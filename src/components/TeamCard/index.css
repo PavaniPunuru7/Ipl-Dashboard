@@ -1,0 +1,119 @@
+/* Team List Grid Container */
+.team-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Force 3 per row */
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    /* 3 x 320px cards with gap */
+}
+
+/* Team Item */
+.team-item {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-decoration: none;
+}
+
+/* Link (Card) */
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff33;
+    width: 300px;
+    height: 180px;
+    border-radius: 12px;
+    border: 1px solid #ffffff;
+    padding: 16px;
+    
+    text-decoration: none;
+    transition: transform 0.2s;
+    
+    margin: 10px;
+    color: inherit;
+    /* inherit text color */
+}
+
+.link:hover {
+    transform: scale(1.03);
+}
+
+/* Team Logo */
+.team-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Team Name */
+.team-name {
+    color: #ffffff;
+    font-family: 'Bree Serif';
+    font-size: 18px;
+    margin-top: 16px;
+    text-align: center;
+    text-decoration: none;
+    /* removes underline */
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Responsive Adjustments */
+@media screen and (min-width: 768px) {
+    .link {
+        min-height: 220px;
+        
+    }
+
+    .team-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .team-name {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .team-logo {
+        width: 120px;
+        height: 120px;
+    }
+}
+@media screen and (max-width:500px ) {
+    .team-logo {
+        width: 100px;
+        height: 100px;
+    }
+    .link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff33;
+        width: 250px;
+        height: 150px;
+        border-radius: 10px;
+        border: 1px solid #ffffff;
+        padding: 10px;
+    
+        text-decoration: none;
+        transition: transform 0.2s;
+    
+        margin: 7px;
+        color: inherit;
+        /* inherit text color */
+    }
+}
