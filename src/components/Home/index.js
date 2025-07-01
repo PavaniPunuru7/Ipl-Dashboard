@@ -5,7 +5,7 @@ import TeamCard from "../TeamCard";
 
 import "./index.css";
 
-const teamsApiUrl = `${process.env.REACT_APP_BACKEND_URL}/api/teams`;
+const teamsApiUrl = "https://ipl-dashboard-1-22ut.onrender.com/api/teams";
 
 class Home extends Component {
   state = {

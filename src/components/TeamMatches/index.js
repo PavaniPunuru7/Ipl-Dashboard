@@ -7,7 +7,8 @@ import MatchCard from "../MatchCard";
 
 import "./index.css";
 
-const teamMatchesApiUrl = `${process.env.REACT_APP_BACKEND_URL}/api/team_matches/`;
+const teamMatchesApiUrl =
+  "https://ipl-dashboard-1-22ut.onrender.com/api/team_matches/";
 
 const TeamMatches = () => {
   const { id } = useParams();
