@@ -5,7 +5,7 @@ import TeamCard from "../TeamCard";
 
 import "./index.css";
 
-const teamsApiUrl = "http://localhost:4000/api/teams";
+const teamsApiUrl = `${process.env.REACT_APP_BACKEND_URL}/api/teams`;
 
 class Home extends Component {
   state = {
