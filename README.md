@@ -13,11 +13,10 @@ A full-stack web application that displays IPL team and match information. The b
 
 ## 📁 Project Structure
 
-ipl-dashboard/
-│
-├── backend/ # Express.js + MongoDB (Mongoose)
-│ ├── models/ # Mongoose schemas (Team, TeamMatch)
-│ ├── routes/ # API route handlers
+ipl-dashboard/backend/ # Express.js + MongoDB (Mongoose)   
+│ ├── models/ # Mongoose schemas (Team, TeamMatch)  
+│ ├── routes/ # API route handlers  
+
 │ ├── .env # Backend environment variables (MongoDB URI)
 │ ├── app.js # App entry (express config)
 │ ├── server.js # Backend server
@@ -34,9 +33,6 @@ ipl-dashboard/
 ├── README.md # Project documentation
 └── LICENSE (if any)
 
-yaml
-Copy
-Edit
 
 ---
 
