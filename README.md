@@ -1,74 +1,88 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# 🏏 IPL Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application that displays IPL team and match information. The backend is built using **Node.js**, **Express**, and **MongoDB**, while the frontend is built using **React.js**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+- **Frontend** (Website): [https://pavani-ipldashboard-bf020.netlify.app](https://pavani-ipldashboard-bf020.netlify.app)
+- **Backend API**: [https://ipl-dashboard-1-22ut.onrender.com/api/teams](https://ipl-dashboard-1-22ut.onrender.com/api/teams)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Project Structure
 
-### `npm test`
+ipl-dashboard/
+│
+├── backend/ # Express.js + MongoDB (Mongoose)
+│ ├── models/ # Mongoose schemas (Team, TeamMatch)
+│ ├── routes/ # API route handlers
+│ ├── .env # Backend environment variables (MongoDB URI)
+│ ├── app.js # App entry (express config)
+│ ├── server.js # Backend server
+│ └── package.json
+│
+├── frontend/ # React frontend (previously src/)
+│ ├── src/ # React components and pages
+│ ├── .env # Frontend environment variable for API URL
+│ ├── public/
+│ ├── package.json
+│ └── build/ # Production build (ignored by Git)
+│
+├── .gitignore # Git ignore rules
+├── README.md # Project documentation
+└── LICENSE (if any)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+yaml
+Copy
+Edit
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js
+- Express.js
+- MongoDB (with Mongoose)
+- Render for deployment
 
-### `npm run eject`
+### Frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React.js
+- React Router
+- Loader Spinner (Oval)
+- Netlify for deployment
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🌐 Environment Variables
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Backend `.env` (in `/backend`)
 
-## Learn More
+MONGODB_URI=your_mongodb_connection_string
+PORT=4000
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+REACT_APP_BACKEND_URL=https://ipl-dashboard-1-22ut.onrender.com
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+📦 Deployment
+Backend
+Hosted on Render
 
-### Code Splitting
+Automatically connects to MongoDB Atlas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Frontend
+Built using npm run build
 
-### Analyzing the Bundle Size
+Hosted on Netlify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+API calls use REACT_APP_BACKEND_URL for dynamic public URL
 
-### Making a Progressive Web App
+📚 Learnings
+Through this project, I gained valuable hands-on experience in building and deploying a full-stack web application. I learned how to create a responsive frontend using React.js, manage dynamic routing with React Router, and fetch data efficiently using asynchronous functions. On the backend, I developed RESTful APIs using Node.js and Express, and connected them to a MongoDB database hosted on Atlas using Mongoose. I also understood the importance of environment variables and how to manage them securely in .env files while avoiding exposure in version control using .gitignore. Deploying the backend on Render and the frontend on Netlify taught me how to connect multiple platforms, handle build errors, whitelist IPs, and configure environment variables for production. This project not only helped me improve my coding and debugging skills but also gave me the confidence to take on more advanced full-stack projects in the future.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Ipl-Dashboard
->>>>>>> origin/main
+🙋‍♀️ Author
+Pavani Punuru
+📧 punurupavani7@gmail.com
